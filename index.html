@@ -1,13 +1,22 @@
 <html>
   <head>
     <title>File upload Nodejs</title>
+    <style type ="text/css" >
+	body {
+	 font-size: 14px;
+	 font-family: Arial , sans-serif;
+    	 background-color: #f7f7f7;
+   	 margin: 80px auto 0 auto;
+    	 width: 500px;
+	}
+    </style>
   </head>
   <body>
       <form id="uploadForm"
           enctype="multipart/form-data"
           action="/api/photo"
           method="post">
-      <input type="file" name="userPhoto" />
+      <input type="file" value = "choose" name="userPhoto" />
       <input type="submit" value="Upload Image" name="submit">
     </form>
   </body>
